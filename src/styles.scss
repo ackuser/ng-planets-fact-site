@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+@import '_fonts';
+@import '_colors';
+;
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    @extend .font-body;
+    margin: 0;
+}
+
+html,
+body {
+    // overflow-x: hidden;
+}
+
+app-root {
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+
+.fx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--c {
+        justify-content: center;
+    }
+}
+
+.fxc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div {
+    border: 1px solid lightblue;
+}
