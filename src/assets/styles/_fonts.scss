@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Antonio-Medium';
+    src: url('../fonts/Antonio-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spartan-Bold';
+    src: url('../fonts/Spartan-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spartan-Regular';
+    src: url('../fonts/Spartan-Regular.ttf') format('truetype');
+}
+
+@mixin font($fontFamily, $fontSize, $lineHeight, $letterSpacing: auto) {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+}
+
+.font {
+
+    &-h1 {
+        @include font(Antonio-Medium, 80px, 103px);
+    }
+
+    &-h2 {
+        @include font(Antonio-Medium, 40px, 52px, -1.5px);
+    }
+
+    &-h3 {
+        @include font(Spartan-Bold, 12px, 25px, 2.6px);
+    }
+
+    &-h4 {
+        @include font(Spartan-Bold, 11px, 25px, 1px)
+    }
+
+    &-body {
+        @include font(Spartan-Regular, 14px, 25px);
+    }
+
+    // &-btn {
+    //     @include font(Barlow-Black, 16px, -.16px, 32px);
+    // }
+
+    @media screen and (min-device-width: 768px) {}
+
+    @media screen and (min-device-width: 1024px) {}
+
+
+}
