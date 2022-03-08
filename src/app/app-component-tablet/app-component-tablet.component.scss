@@ -1,0 +1,78 @@
+:host {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, auto) minmax(88px, 216px);
+    justify-content: center;
+    // align-items: center;
+    // align-content: center;
+    height: 1024px;
+    margin: 32px 37px 36px 37px;
+    column-gap: 74px;
+
+    .header {
+        justify-content: center;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        height: 36px;
+    }
+
+    .nav {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        height: 25px;
+    }
+
+    .menu {
+        grid-column: 5 / 9;
+        grid-row: 4 / 5;
+        height: 152px;
+        align-self: center;
+    }
+
+    .wrap {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+
+
+        .image {
+            align-self: center;
+            width: 285px;
+            height: 285px;
+            background-color: lightsalmon;
+        }
+    }
+
+    .planet {
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+        width: 339px;
+        height: 235px;
+        align-self: center;
+        align-items: flex-start;
+
+        .title {
+            height: 62px;
+        }
+
+        .description {
+            height: 110px;
+        }
+
+        &__source {
+            height: 25px;
+        }
+    }
+
+
+    .infos {
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+        height: 88px;
+
+        .info {
+            width: 164px;
+            height: 53px;
+            // padding: 15px;
+        }
+    }
+}

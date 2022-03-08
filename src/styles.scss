@@ -41,6 +41,7 @@ p {
     align-items: center;
 
     &--c {
+        @extend .fx;
         justify-content: center;
     }
 }
@@ -50,6 +51,11 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    &--c {
+        @extend .fxc;
+        align-items: flex-start;
+    }
 }
 
 div {
