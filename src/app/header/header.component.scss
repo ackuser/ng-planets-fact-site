@@ -1,0 +1,22 @@
+@import '_common';
+@import '_fonts';
+@import '_colors';
+
+:host {
+    @extend .fx;
+    height: 36px;
+
+    .title {
+        @include font(Antonio-Medium, 28px, 36px, -1.05px);
+    }
+
+    .burguer {
+        visibility: visible;
+
+        @media screen and (min-device-width: 768px) {
+            visibility: hidden;
+        }
+
+    }
+
+}

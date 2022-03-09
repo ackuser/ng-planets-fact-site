@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { AppComponentTabletComponent } from './app-component-tablet/app-component-tablet.component';
 import { AppComponentDesktopComponent } from './app-component-desktop/app-component-desktop.component';
 import { AppComponentMobileComponent } from './app-component-mobile/app-component-mobile.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppComponentTabletComponent,
     AppComponentDesktopComponent,
-    AppComponentMobileComponent
+    AppComponentMobileComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

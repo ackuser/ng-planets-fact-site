@@ -20,6 +20,7 @@ body {
 html,
 body {
     // overflow-x: hidden;
+    background-color: $blue;
 }
 
 app-root {
@@ -60,4 +61,16 @@ p {
 
 div {
     border: 1px solid lightblue;
+}
+
+.-white {
+    color: white;
+}
+
+.-mayus{
+    text-transform: uppercase;
+}
+
+.-cursor{
+    cursor: pointer;
 }
