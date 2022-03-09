@@ -1,22 +1,37 @@
-.fx {
+%flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+.fx {
+    @extend %flex;
 
     &--c {
         @extend .fx;
         justify-content: center;
     }
+
+    &--s {
+        @extend .fx;
+        justify-content: flex-start;
+    }
 }
 
 .fxc {
-    display: flex;
+    @extend %flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 
     &--c {
         @extend .fxc;
         align-items: flex-start;
     }
+}
+
+@mixin fxc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }

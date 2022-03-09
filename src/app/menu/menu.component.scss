@@ -4,17 +4,82 @@
 
 :host {
     @extend .fx;
-    height: 50px;
+
+    @media screen and (min-device-width: 768px) {
+        @include fxc;
+        width: 100%;
+    }
 
     .item {
-        height: 98%;
+        // IN MOBILE NO HACE FALTA ESTE EXTEND
+        @extend .fx--s;
         @include font(Spartan-Bold, 9px, 10px, 1.93px);
+        height: 98%;
         opacity: .5;
+
+        @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+            width: 100%;
+            height: 40px;
+            opacity: 1;
+            padding: 0 20px;
+            text-align: start;
+            border: 1px solid rgba($color: white, $alpha: .5);
+        }
+
+        @media screen and (min-device-width: 1024px) {
+            @include font(Spartan-Bold, 12px, 25px, 2.57px);
+            width: 100%;
+            height: 48px;
+            padding: 0 28px;
+        }
+
+
+        &__order {
+            display: none;
+
+            @media screen and (min-device-width: 768px) {
+                display: inline-flex;
+                width: 18px;
+                margin-right: 12px;
+                opacity: .5;
+            }
+        }
+
+        &__title {
+
+            &.-is-desktop {
+                display: none;
+
+                @media screen and (min-device-width: 768px) {
+                    display: inline-flex;
+
+                    &:before, &:after {
+                        content: "\00a0 ";
+                    }
+                }
+            }
+
+        }
 
         &:active,
         &:focus {
             opacity: 1;
             border-bottom: 4px solid $neptune;
+
+            @media screen and (min-device-width: 768px) {
+                border-bottom: none;
+                background: $neptune;
+            }
         }
+
+        @media screen and (min-device-width: 768px) {
+            &:hover {
+                opacity: 1;
+                background: $grey;
+            }
+        }
+
+
+
     }
 }

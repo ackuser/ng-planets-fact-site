@@ -4,7 +4,6 @@
 
 :host {
     @extend .fx;
-    height: 36px;
 
     .title {
         @include font(Antonio-Medium, 28px, 36px, -1.05px);
