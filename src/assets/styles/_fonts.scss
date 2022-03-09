@@ -13,7 +13,7 @@
     src: url('../fonts/Spartan-Regular.ttf') format('truetype');
 }
 
-@mixin font($fontFamily, $fontSize, $lineHeight, $letterSpacing: auto) {
+@mixin font($fontFamily, $fontSize, $lineHeight, $letterSpacing: unset) {
     font-family: $fontFamily;
     font-size: $fontSize;
     line-height: $lineHeight;

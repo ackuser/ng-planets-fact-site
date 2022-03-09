@@ -1,0 +1,20 @@
+@import '_common';
+@import '_fonts';
+@import '_colors';
+
+:host {
+    @extend .fx;
+    height: 50px;
+
+    .item {
+        height: 98%;
+        @include font(Spartan-Bold, 9px, 10px, 1.93px);
+        opacity: .5;
+
+        &:active,
+        &:focus {
+            opacity: 1;
+            border-bottom: 4px solid $neptune;
+        }
+    }
+}

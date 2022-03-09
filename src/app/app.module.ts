@@ -7,6 +7,7 @@ import { AppComponentTabletComponent } from './app-component-tablet/app-componen
 import { AppComponentDesktopComponent } from './app-component-desktop/app-component-desktop.component';
 import { AppComponentMobileComponent } from './app-component-mobile/app-component-mobile.component';
 import { HeaderComponent } from './header/header.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HeaderComponent } from './header/header.component';
     AppComponentTabletComponent,
     AppComponentDesktopComponent,
     AppComponentMobileComponent,
-    HeaderComponent
+    HeaderComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
